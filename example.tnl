@@ -1,0 +1,19 @@
+let box/test1 = "Переменная типа let" 
+bad box/test2 = "Переменная типа var"
+con box/test3 = "Переменная типа const"
+
+let box/name = inputLine.<Как тебя зовут? >
+printLine.<Вас зовут .[name]>
+printLine.<Вас зовут .[box/name]>
+
+func/testfunc.<arg1, arg2> start
+  printLine.<Привет мир>
+  printLine.<аргумент 1 .[arg1]>
+  printLine.arg2
+finish
+
+if.<test1 == "Переменная типа let"> start
+  printLine.<да>
+finish
+
+testfunc.(<hello>, <world>)
